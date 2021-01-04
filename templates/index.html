@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shoe Size Predictor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1 class="header">Shoe Size Predictor</h1>
+
+<!--input from user-->
+<form action="{{ url_for('predict')}}"method="post">
+<div class="container">
+    <div class="label_container">
+        <label for="gender">Sex </label>
+    </div>
+    <select name="gender" class="gender_container">
+        <option value="1">Male</option>
+        <option value="0">Female</option>
+    </select>
+    <br>
+    <div class="label_container">
+        <label for="height" class="label">Height (cm)</label>
+    </div>
+    <input type="number" name="height" placeholder="Height" required="required" class="height_container" />
+    <br>
+    <button type="submit" value="Submit" class="predict_container">Predict</button>
+</div>
+</form>
+</body>
+</html>

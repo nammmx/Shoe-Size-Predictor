@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shoe Size Predictor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="container">
+    <div class="prediction_container">
+        {{ prediction_text }}
+    </div>
+    <p>Was the prediction correct?</p>
+    <form action="{{ url_for('redirect_yes')}}"method="post">
+        <button type="submit" value="Submit" class="predict_container">Yes</button>
+    </form>
+    <form action="{{ url_for('redirect_no')}}"method="post">
+        <button type="submit" value="Submit" class="predict_container_no">No</button>
+    </form>
+  </div>
+</body>

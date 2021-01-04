@@ -1,0 +1,62 @@
+body {
+  font-family: arial;
+  background-color: whitesmoke;
+}
+
+.header {
+  text-align: center;
+}
+.container {
+  width: 300px;
+  margin: auto;
+  border: 2px solid darkgrey;
+  padding: 10px;
+}
+
+.label_container {
+  font-weight: bold;
+  font-size: 140%;
+  margin: 5px 0;
+}
+
+.gender_container {
+  width: 100%;
+  background: gainsboro;
+  border: none;
+  padding: 10px;
+  margin: 5px 0 25px 0;
+}
+
+.height_container {
+  width: 93%;
+  background: gainsboro;
+  border: none;
+  padding: 10px;
+  margin: 5px 0 25px 0;
+}
+
+.predict_container {
+  width: 100%;
+  background: #99AD81;
+  border: none;
+  padding: 10px;
+  margin: 5px 0;
+  font-weight: bold;
+  font-size: 110%;
+}
+
+.predict_container_no {
+  width: 100%;
+  background: indianred;
+  border: none;
+  padding: 10px;
+  margin: 5px 0;
+  font-weight: bold;
+  font-size: 110%;
+}
+
+.prediction_container {
+  font-weight: bold;
+  font-size: 120%;
+  margin: 5px 0;
+}

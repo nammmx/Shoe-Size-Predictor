@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shoe Size Predictor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <form action="{{ url_for('feedback')}}"method="post">
+    <div class="container">
+        <p><b>Please help us improve by entering your gender, height and shoe size!</b></p>
+        <br>
+        <div class="label_container">
+            <label for="gender">Sex </label>
+        </div>
+        <select name="gender" class="gender_container">
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select>
+        <br>
+        <div class="label_container">
+            <label for="height" class="label">Height (cm)</label>
+        </div>
+        <input type="number" name="height" placeholder="Height" required="required" class="height_container" />
+        <br>
+        <div class="label_container">
+            <label for="shoe_size" class="label">Shoe Size (EU)</label>
+        </div>
+        <input type="number" name="shoe_size" placeholder="Shoe Size (EU)" required="required" class="height_container" />
+        <br>        
+
+        <button type="submit" value="Submit" class="predict_container">Feedback</button>
+    </div>
+  </form>
+</body>
