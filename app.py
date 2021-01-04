@@ -12,11 +12,11 @@ ENV = "prod"
 if ENV =="dev":
   app.debug = True
   #development database
-  app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:Truongnam97@localhost/shoe_size"
+  app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:**********@localhost/shoe_size"
 else:
   app.debug = False
   #production database
-  app.config["SQLALCHEMY_DATABASE_URI"] = "postgres://tfyvoiridczpfi:9eb09dd1373e2c7b74673aa599d4b0253f794d3828bc8e2bff0091b3afdcdbc1@ec2-3-215-40-176.compute-1.amazonaws.com:5432/dc0e0mkjq0kquf"
+  app.config["SQLALCHEMY_DATABASE_URI"] = "********"
 
 #warning
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
